@@ -1,7 +1,6 @@
 import React from "react";
 import { GiCheckMark } from "react-icons/gi";
 import { MdOutlineCancel } from "react-icons/md";
-import { data } from "../Data";
 function Buttons({
   counterUp,
   setCounterUp,
@@ -9,9 +8,6 @@ function Buttons({
   setCounterDown,
   randomObject,
 }) {
-  console.log(data);
-  console.log(randomObject);
-
   const handleVBtn = () => {
     if (randomObject.rightAnswer === true) {
       setCounterUp(counterUp + 1);
@@ -25,7 +21,6 @@ function Buttons({
     } else {
       setCounterDown(counterDown + 1);
     }
-    console.log("by!");
   };
 
   return (
